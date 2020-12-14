@@ -10,11 +10,7 @@ export const Container = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
-  background: linear-gradient(
-    108deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
-  );
+  background: linear-gradient(108deg, #06442a 0%, rgba(10, 201, 122, 1) 100%);
 `;
 
 export const FormWrap = styled.div`
@@ -89,6 +85,15 @@ export const FormInput = styled.input`
   margin-bottom: 32px;
   border: none;
   border-radius: 4px;
+`;
+
+export const FormTextArea = styled.textarea`
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+  resize: none;
+  height: 250px;
 `;
 
 export const FormButton = styled.button`

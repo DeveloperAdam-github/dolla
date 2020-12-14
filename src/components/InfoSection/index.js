@@ -32,7 +32,6 @@ const InfoSection = ({
   dark,
   dark2,
 }) => {
-  console.log(image);
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -41,22 +40,31 @@ const InfoSection = ({
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{heading}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <Button
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap>
+                <Heading lightText={lightText}>
+                  Learn a little bit about me...
+                </Heading>
+                <Subtitle darkText={darkText}>
+                  <p>
+                    I'm Adam, a 29 year old self-taught web developer, from
+                    United Kingdom.
+                  </p>
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  <p>
+                    August 2019 is when I decided I want more from my life, so I
+                    began to self teach web development. Started off with the
+                    basics HTML, CSS and then started to dive into JavaScript.
+                  </p>
+                </Subtitle>
+                <Subtitle darkText={darkText}>
+                  <p>
+                    I've taken many online courses in this time and recently
+                    I've been working way through learning React, Redux and even
+                    playing around with some MERN stack applications. Please
+                    take a look at my projects below & if you need to contact me
+                    feel free to do so, thanks
+                  </p>
+                </Subtitle>
               </TextWrapper>
             </Column1>
             <Column2>

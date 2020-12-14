@@ -12,7 +12,9 @@ import {
   NavMenu,
   NavBtn,
   NavBtnLink,
+  websiteLogo,
 } from './NavbarElements';
+import logo from '../../images/websiteLogo.svg';
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -39,7 +41,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}>
-              dolla
+              <img src={logo} alt='' style={{ width: '160px' }} />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -59,55 +61,31 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to='discover'
+                  to='portfolio'
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
                   offset={-80}
                 >
-                  Discover
+                  Portfolio
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to='crypto'
+                  to='contact'
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
                   offset={-80}
                 >
-                  Crypto
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to='register'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                >
-                  Register
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to='services'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                >
-                  Services
+                  Contact
                 </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+              <NavBtnLink to='/signin'>Contact Me</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

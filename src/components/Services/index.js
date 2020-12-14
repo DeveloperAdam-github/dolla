@@ -2,6 +2,7 @@ import React from 'react';
 import Icon1 from '../../images/5.svg';
 import Icon2 from '../../images/6.svg';
 import Icon3 from '../../images/7.svg';
+import Icon4 from '../../images/screenshot.png';
 import {
   ServicesContainer,
   ServicesWrapper,
@@ -14,28 +15,37 @@ import {
 
 const Services = () => {
   return (
-    <ServicesContainer id='services'>
-      <ServicesH1>Our Services</ServicesH1>
+    <ServicesContainer id='portfolio'>
+      <ServicesH1>My Projects</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
-          <ServicesIcon src={Icon1} />
-          <ServicesH2>Reduce Expenses</ServicesH2>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='https://peaceful-falls-30555.herokuapp.com/homepage'
+          >
+            <ServicesIcon src={Icon4} />
+          </a>
+          <ServicesH2>Workout Tracker</ServicesH2>
           <ServicesP>
-            We help reduce your fees and increase your interests.
+            A MERN application where you can log your workouts, or adjust
+            percentages
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
-          <ServicesH2>Virtual Offices</ServicesH2>
+          <ServicesH2>N/A</ServicesH2>
           <ServicesP>
-            You can access our platform from anywhere online in the world
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Praesentium, impedit!
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Premium Benefits</ServicesH2>
+          <ServicesH2>N/A</ServicesH2>
           <ServicesP>
-            Unlock our special membershio card that returns 5% cashback!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            temporibus.
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>

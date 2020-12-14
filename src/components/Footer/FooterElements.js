@@ -26,10 +26,29 @@ export const FooterLinksContainer = styled.div`
 
 export const FooterLinksWrapper = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #02bf71;
+  text-transform: uppercase;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
+`;
+
+export const FooterInside = styled.div`
+  margin-top: 36px;
+  text-transform: none;
+  color: #fff;
+`;
+
+export const FooterInsideEmail = styled.p`
+  text-transform: none;
+  margin-top: 22px;
+  font-size: 26px;
+  font-weight: 800;
 `;
 
 export const FooterLinkItems = styled.div`

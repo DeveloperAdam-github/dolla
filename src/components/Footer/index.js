@@ -15,7 +15,11 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
+  FooterInside,
+  FooterInsideEmail,
 } from './FooterElements';
+import { Link } from 'react-router-dom';
+import logo from '../../images/websiteLogo.svg';
 
 const Footer = () => {
   const backToTop = () => {
@@ -23,63 +27,66 @@ const Footer = () => {
   };
 
   return (
-    <FooterContainer>
+    <FooterContainer id='contact'>
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to='/signin'> How it works</FooterLink>
-              <FooterLink to='/signin'> Testimonials</FooterLink>
-              <FooterLink to='/signin'> Careers</FooterLink>
-              <FooterLink to='/signin'> Investors</FooterLink>
-              <FooterLink to='/signin'> Terms of Service</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>Contact Us</FooterLinkTitle>
-              <FooterLink to='/signin'> Contact</FooterLink>
-              <FooterLink to='/signin'> Support</FooterLink>
-              <FooterLink to='/signin'> Destinations</FooterLink>
-              <FooterLink to='/signin'> Sponsorships</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>Videos</FooterLinkTitle>
-              <FooterLink to='/signin'> Submit Video</FooterLink>
-              <FooterLink to='/signin'> Ambassadors</FooterLink>
-              <FooterLink to='/signin'> Agency</FooterLink>
-              <FooterLink to='/signin'> Influencer</FooterLink>
-            </FooterLinkItems>
+            <h1>Contact me</h1>
+            <FooterInside>
+              If you want to get in touch, you can email me at:
+            </FooterInside>
+            <a
+              style={{ textDecoration: 'none', color: '#fff' }}
+              href='mailto:thedeveloperadam@gmail.com'
+            >
+              <FooterInsideEmail>thedeveloperadam@gmail.com</FooterInsideEmail>
+            </a>
+            <p
+              style={{
+                marginTop: '36px',
+                color: '#fff',
+                textTransform: 'none',
+              }}
+            >
+              OR fill in the contact
+              <Link to='/signin' style={{ textDecoration: 'none' }}>
+                <span style={{ color: '#02bf71', fontWeight: '800' }}>
+                  {' '}
+                  FORM
+                </span>
+              </Link>
+            </p>
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={backToTop}>
-              dolla
+              <img src={logo} alt='' style={{ width: '160px' }} />
             </SocialLogo>
             <WebsiteRights>
               {' '}
-              dolla &copy; {new Date().getFullYear()}
+              DeveloperAdam &copy; {new Date().getFullYear()}
               All rights reserved.
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink
-                href='//www.facebook.com'
+                style={{ color: '#02bf71' }}
+                href='//www.facebook.com/DeveloperAdam1'
                 target='_blank'
                 aria-label='Facebook'
               >
                 <FaFacebook />
               </SocialIconLink>
               <SocialIconLink
-                href='//www.instagram.com'
+                href='//www.instagram.com/developeradam/'
                 target='_blank'
                 aria-label='Instagram'
               >
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink
-                href='//www.twitter.com'
+                style={{ color: '#02bf71' }}
+                href='//www.twitter.com/DeveloperAdam_'
                 target='_blank'
                 aria-label='Twitter'
               >

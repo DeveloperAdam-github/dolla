@@ -42,6 +42,13 @@ export const NavLogo = styled(LinkR)`
   text-decoration: none;
 `;
 
+export const websiteLogo = styled.img`
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+  align-items: center;
+`;
+
 export const MobileIcon = styled.div`
   display: none;
 
@@ -82,10 +89,6 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
-  &.active {
-    border-bottom: 3px solid #01bf71;
-  }
 `;
 
 export const NavBtn = styled.nav`
